@@ -1,0 +1,62 @@
+<footer id="footer" class="mt-0">
+    <div class="container my-4">
+        <div class="row py-5">
+            <div class="col-lg-4 mb-4 mb-md-0 text-center text-lg-left pt-3">
+                <h5 class="text-5 text-transform-none font-weight-semibold text-color-light mb-4">{{ 'Footer.Quick Links'|_ }}</h5>
+                <ul class="list list-icons list-icons-sm d-inline-flex flex-column">
+                    <li class="text-4 mb-2"><i class="fas fa-angle-right"></i>
+                        <a href="{{ 'point-of-sale'|page }}" class="link-hover-style-1 ml-1">
+                            {{ 'Footer.Point of Sale'|_ }}
+                        </a>
+                    </li>
+                    <li class="text-4 mb-2"><i class="fas fa-angle-right"></i>
+                        <a href="{{ 'services'|page }}" class="link-hover-style-1 ml-1">
+                            {{ 'Footer.Services'|_ }}
+                        </a>
+                    </li>
+                    <li class="text-4 mb-2"><i class="fas fa-angle-right"></i>
+                        <a href="{{ 'contact-us'|page }}" class="link-hover-style-1 ml-1">
+                            {{ 'Footer.Contact Us'|_ }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0 text-center text-lg-left pt-3">
+                <div class="contact-details">
+                    <h5 class="text-5 text-transform-none font-weight-semibold text-color-light mb-4">{{ 'Footer.Contact Us'|_ }}</h5>
+                    <ul class="list list-icons list-icons-lg">
+                        <li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i>
+                            <p class="m-0">{{this.theme.config.address}}</p>
+                        </li>
+                        <li class="mb-1"><i class="fab fa-whatsapp text-color-primary"></i>
+                            <p class="m-0"><a href="tel:8883771838">{{this.theme.config.phone}}</a></p></li>
+                        <li class="mb-1"><i class="far fa-envelope text-color-primary"></i>
+                            <p class="m-0"><a href="mailto:ezupos@hotmail.com">{{this.theme.config.email}}</a></p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-left pt-3">
+                <h5 class="text-5 text-transform-none font-weight-semibold text-color-light mb-4">{{ 'Footer.Follow Us'|_ }}</h5>
+                <ul class="footer-social-icons social-icons social-icons-clean social-icons-big social-icons-opacity-light social-icons-icon-light mt-0 mt-lg-3">
+                    <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank"
+                                                         title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank"
+                                                        title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank"
+                                                         title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container container-lg">
+        <div class="footer-copyright footer-copyright-style-2">
+            <div class="py-2">
+                <div class="row py-4">
+                    <div class="col d-flex align-items-center justify-content-center mb-4 mb-lg-0">
+                        <p>{{this.theme.config.site_name}} © Copyright 2019. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,18 @@
+title = "Ezupos | services"
+url = "/services"
+layout = "default"
+meta_title = "Ezupos | services"
+is_hidden = 0
+
+[viewBag]
+activeMenu = "services"
+==
+<div role="main" class="main">
+    {% partial 'components/banner'
+    title='Services'
+    bgImage='/themes/ezupos/assets/images/service_banner.jpg'
+    subTitle='Call us at 1 (888) 377-1838, Mon–Fri, 10 a.m.–6 p.m. PT.'
+    description='The POS system with everything you need and nothing you don’t.'
+    %}
+    {% partial 'service/content' %}
+</div>

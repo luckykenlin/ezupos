@@ -1,0 +1,188 @@
+<header id="header" class="header-effect-shrink"
+        data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+    <div class="header-body border-top-0">
+        <div class="header-top">
+            <div class="container container-lg">
+                <div class="header-row py-2">
+                    <div class="header-column justify-content-end">
+                        <div class="header-row">
+                            <nav class="header-nav-top">
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item dropdown nav-item-left-border d-none d-sm-block nav-item-left-border-remove nav-item-left-border-md-show">
+                                        <a class="nav-link" href="#" role="button" id="dropdownLanguage"
+                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="{{ 'assets/img/blank.gif' | theme }}"
+                                                 class="flag {{ activeLocale == 'zh'? 'flag-cn' : 'flag-us' }}"
+                                                 alt="English"/> {{ activeLocale == 'zh'? '中文' : 'English' }}
+                                            <i class="fas fa-angle-down"></i>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                                            <a class="dropdown-item" href="#" data-request="onSwitchLocale"
+                                               data-request-data="locale: 'en'"><img
+                                                    src="{{ 'assets/img/blank.gif' | theme }}" class="flag flag-us"
+                                                    alt="English"/> English</a>
+                                            <a class="dropdown-item" href="#" data-request="onSwitchLocale"
+                                               data-request-data="locale: 'zh'"><img
+                                                    src="{{ 'assets/img/blank.gif' | theme }}" class="flag flag-cn"
+                                                    alt="English"/> 中文</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
+                                        <span class="ws-nowrap"><i class="fas fa-phone"></i>{{this.theme.config.phone}}</span>
+                                    </li>
+                                    <li class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
+                                        <span class="ws-nowrap"><i class="fas fa-envelope"></i>{{this.theme.config.email}}</span>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-container header-container-height-sm container container-lg">
+            <div class="header-row">
+                <div class="header-column flex-grow-0">
+                    <div class="header-row pr-4">
+                        <div class="header-logo">
+                            <a href="{{ 'home'|page }}">
+                                <img alt="Porto" height="48" data-sticky-height="40"
+                                     src="{{'assets/images/logo.png' | theme }}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-column justify-content-end">
+                    <div class="header-row">
+                        <div class="header-nav header-nav-links justify-content-center">
+                            <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                <nav class="collapse header-mobile-border-top">
+                                    <ul class="nav nav-pills" id="mainNav">
+                                        <li class="dropdown">
+                                            <a class="dropdown-item {{ viewBag.activeMenu == 'home' ? 'active' : ''}}"
+                                               href="{{ 'home'|page }}">
+                                                {{ 'Nav.Home'|_ }}
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle {{ viewBag.activeMenu == 'point-of-sale' ? 'active' : ''}}"
+                                               href="{{ 'point-of-sale'|page }}">
+                                                {{ 'Nav.Point of Sale'|_ }}
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item {{ viewBag.activeMenu == 'point-of-sale' ? 'active' : ''}}"
+                                                       href="{{ 'pos-restaurant'|page }}">
+                                                        {{ 'Nav.Ezupos for Restaurant'|_ }}
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item {{ viewBag.activeMenu == 'point-of-sale' ? 'active' : ''}}"
+                                                       href="{{ 'pos-retail'|page }}">
+                                                        {{ 'Nav.Ezupos for Retail'|_ }}
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item {{ viewBag.activeMenu == 'point-of-sale' ? 'active' : ''}}"
+                                                       href="{{ 'pos-nail'|page }}">
+                                                        {{ 'Nav.Ezupos for Nail salon'|_ }}
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item {{ viewBag.activeMenu == 'services' ? 'active' : ''}}"
+                                               href="{{ 'services'|page }}">
+                                                {{ 'Nav.Service'|_ }}
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item {{ viewBag.activeMenu == 'services' ? 'active' : ''}}"
+                                                       href="{{ 'services'|page }}#credit-card-processing">
+                                                        {{ 'Nav.Credit Card Processing'|_ }}
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item {{ viewBag.activeMenu == 'services' ? 'active' : ''}}"
+                                                       href="{{ 'services'|page }}#online-ordering">
+                                                        {{ 'Nav.Online Ordering'|_ }}
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item {{ viewBag.activeMenu == 'services' ? 'active' : ''}}"
+                                                       href="{{ 'services'|page }}#loyalty">
+                                                        {{ 'Nav.Loyalty / Gift Card'|_ }}
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item {{ viewBag.activeMenu == 'services' ? 'active' : ''}}"
+                                                       href="{{ 'services'|page }}#website-design">
+                                                        {{ 'Nav.Website Design'|_ }}
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item {{ viewBag.activeMenu == 'services' ? 'active' : ''}}"
+                                                       href="{{ 'services'|page }}#marketing">
+                                                        {{ 'Nav.Marketing / Seo'|_ }}
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item {{ viewBag.activeMenu == 'pos-hardware' ? 'active' : ''}}"
+                                               href="{{ 'pos-hardware'|page }}">
+                                                {{ 'Nav.POS Hardware'|_ }}
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item {{ viewBag.activeMenu == 'tech-support' ? 'active' : ''}}"
+                                               href="{{ 'tech-support'|page }}">
+                                                {{ 'Nav.Tech Support'|_ }}
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item {{ viewBag.activeMenu == 'about-us' ? 'active' : ''}}"
+                                               href="{{ 'about-us'|page }}">
+                                                {{ 'Nav.About us'|_ }}
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item {{ viewBag.activeMenu == 'contact-us' ? 'active' : ''}}"
+                                               href="{{ 'contact-us'|page }}">
+                                                {{ 'Nav.Contact us'|_ }}
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item {{ viewBag.activeMenu == 'careers' ? 'active' : ''}}"
+                                               href="{{ 'careers'|page }}">
+                                                {{ 'Nav.Careers'|_ }}
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-column flex-grow-0 justify-content-center">
+                    <div class="header-row pl-4 justify-content-end">
+                        <ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean m-0">
+                            <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank"
+                                                                 title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank"
+                                                                title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank"
+                                                                 title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                        <button class="btn header-btn-collapse-nav ml-0 ml-sm-3" data-toggle="collapse"
+                                data-target=".header-nav-main nav">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

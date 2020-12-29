@@ -1,0 +1,72 @@
+title = "Ezupos | point of sale"
+url = "/point-of-sale"
+layout = "default"
+meta_title = "Ezupos | point of sale"
+is_hidden = 0
+
+[viewBag]
+activeMenu = "point-of-sale"
+==
+<div role="main" class="main">
+    {% partial 'components/banner'
+    title='Point of Sale'
+    bgImage='/themes/ezupos/assets/images/point_of_sale_banner_s.jpg'
+    subTitle='Call us at 1 (888) 377-1838, Mon–Fri, 10 a.m.–6 p.m. PT.'
+    description='The POS system with everything you need and nothing you don’t.'
+    %}
+    <section class="section bg-color-grey section-height-3 border-0 mt-0 mb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter"
+                         id="credit-card-processing">
+                        <div class="col-md-4 px-5 px-md-3">
+                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4"
+                                 src="{{ 'assets/images/pos_for_restaurant_s.jpg' | theme}}"
+                                 alt="layout styles"/>
+                        </div>
+                        <div class="col-md-8 pl-md-5">
+                            <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">{{ 'CareerPage.Restaurant'|_ }}</strong></h2>
+                            <p class="text-4">{{ 'CareerPage.Restaurant.Description'|_ }}</p>
+                            <a href="{{ 'pos-restaurant'|page }}" class="btn btn-modern btn-dark mt-1">{{ 'System.Learn more'|_ }}</a>
+                        </div>
+                    </div>
+
+                    <hr class="solid my-5">
+
+                    <div class="row align-items-center pt-5 pb-3 appear-animation"
+                         id="online-ordering"
+                         data-appear-animation="fadeInRightShorter">
+                        <div class="col-md-8 pr-md-5 mb-5 mb-md-0">
+                            <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">{{ 'CareerPage.Retail'|_ }}</strong></h2>
+                            <p class="text-4">{{ 'CareerPage.Retail.Description'|_ }}</p>
+                            <a href="{{ 'pos-retail'|page }}" class="btn btn-modern btn-dark mt-1">{{ 'System.Learn more'|_ }}</a>
+                        </div>
+                        <div class="col-md-4 px-5 px-md-3">
+                            <img class="img-fluid scale-2 my-4"
+                                 src="{{ 'assets/images/pos_for_retail_s.jpg' | theme}}"
+                                 alt="style switcher"/>
+                        </div>
+                    </div>
+
+                    <hr class="solid my-5">
+
+                    <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter"
+                         id="loyalty">
+                        <div class="col-md-4 px-5 px-md-3">
+                            <img class="img-fluid scale-2 my-4"
+                                 src="{{ 'assets/images/pos_for_nail_salon_s.jpg' | theme}}"
+                                 alt="layout styles"/>
+                        </div>
+                        <div class="col-md-8 pl-md-5">
+                            <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">{{ 'CareerPage.Nail Salon'|_ }}</strong></h2>
+                            <p class="text-4">{{ 'CareerPage.Nail Salon.Description'|_ }}</p>
+                            <a href="{{ 'pos-nail'|page }}" class="btn btn-modern btn-dark mt-1">{{ 'System.Learn more'|_ }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

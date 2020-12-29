@@ -1,0 +1,268 @@
+title = "Ezupos | Home"
+url = "/"
+layout = "default"
+
+[viewBag]
+activeMenu = "home"
+==
+<div role="main" class="main">
+    <div class="container container-lg">
+        <div class="row">
+            <div class="col">
+                <div class="appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn"
+                     data-appear-animation-delay="500" style="animation-delay: 500ms;">
+                    <div class="sort-destination-loader sort-destination-loader-loaded">
+                        <div class="row portfolio-list sort-destination" data-sort-id="portfolio" data-filter="*"
+                             style="position: relative; height: 720px;">
+                            <div class="col-sm-6 col-lg-6 isotope-item websites px-0"
+                                 style="position: absolute; left: 0px; top: 0px;">
+                                <div class="portfolio-item">
+                                    <a href="{{ 'pos-restaurant'|page }}">
+                                        <span class="thumb-info thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+                                            <span class="thumb-info-wrapper">
+                                                <img src="{{ 'assets/images/restaurant.jpg' | theme }}"
+                                                     class="img-fluid" alt="">
+                                                <span class="thumb-info-title bg-transparent p-4">
+                                                    <span class="thumb-info-inner line-height-1 text-4 font-weight-bold">{{ 'HomePage.Banner.Left.Title'|_ }}</span>
+                                                    <span class="thumb-info-type">{{ 'HomePage.Banner.Left.SubTitle'|_ }}</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-lg-6 isotope-item medias px-0"
+                                 style="position: absolute; left: 720px; top: 0px;">
+                                <div class="portfolio-item">
+                                    <a href="{{ 'pos-retail'|page }}">
+                                        <span class="thumb-info thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
+                                            <span class="thumb-info-wrapper">
+                                                <img src="{{ 'assets/images/retail.jpg' | theme }}"
+                                                     class="img-fluid" alt="">
+                                                <span class="thumb-info-title bg-transparent p-4">
+                                                    <span class="thumb-info-inner line-height-1 text-4 font-weight-bold text-dark">{{ 'HomePage.Banner.Right.Title'|_ }}</span>
+                                                    <span class="thumb-info-type text-dark">{{ 'HomePage.Banner.Right.SubTitle'|_ }}</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bounce-loader">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4 my-5">
+        <div class="row justify-content-center text-center mb-4 appear-animation animated fadeInUpShorter appear-animation-visible"
+             data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;">
+            <div class="col-lg-8">
+                <h2 class="font-weight-bold mb-3 mt-3">{{ 'HomePage.Section1.Title'|_ }}</h2>
+                <p class="text-6 text-color-dark line-height-7 negative-ls-1 px-5">{{ 'HomePage.Section1.SubTitle'|_
+                    }}</p>
+                <p class="opacity-9 text-4">{{ 'HomePage.Section1.Description'|_ }}</p>
+            </div>
+        </div>
+        <div class="row featured-boxes featured-boxes-style-4">
+            <div class="col-md-4 col-lg-4">
+                <div class="featured-box featured-box-primary featured-box-effect-4 appear-animation animated fadeInLeftShorter appear-animation-visible"
+                     data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200"
+                     style="height: 151px; animation-delay: 200ms;">
+                    <div class="box-content px-4">
+                        <i class="icon-featured icon-star icons text-12"></i>
+                        <h4 class="font-weight-bold text-color-dark pb-1 mb-2">{{ 'HomePage.Section2.Point of Sale'|_
+                            }}</h4>
+                        <p class="mb-0">{{ 'HomePage.Section2.Point of Sale.Description'|_ }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <div class="featured-box featured-box-primary featured-box-effect-4 appear-animation animated fadeIn appear-animation-visible"
+                     data-appear-animation="fadeIn" style="height: 151px; animation-delay: 100ms;">
+                    <div class="box-content px-4">
+                        <i class="icon-featured icon-basket icons text-12"></i>
+                        <h4 class="font-weight-bold text-color-dark pb-1 mb-2">{{ 'HomePage.Section2.Online Ordering'|_
+                            }}</h4>
+                        <p class="mb-0">{{ 'HomePage.Section2.Online Ordering.Description'|_ }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <div class="featured-box featured-box-primary featured-box-effect-4 appear-animation animated fadeInRightShorter appear-animation-visible"
+                     data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"
+                     style="height: 151px; animation-delay: 200ms;">
+                    <div class="box-content px-4">
+                        <i class="icon-featured icon-credit-card icons text-12"></i>
+                        <h4 class="font-weight-bold text-color-dark pb-1 mb-2">{{ 'HomePage.Section2.Credit Card
+                            Processing'|_ }}</h4>
+                        <p class="mb-0">{{ 'HomePage.Section2.Credit Card Processing.Description'|_ }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <div class="featured-box featured-box-primary featured-box-effect-4 appear-animation animated fadeIn appear-animation-visible"
+                     data-appear-animation="fadeIn" style="height: 151px; animation-delay: 100ms;">
+                    <div class="box-content px-4">
+                        <i class="icon-featured icon-trophy icons text-12"></i>
+                        <h4 class="font-weight-bold text-color-dark pb-1 mb-2">{{ 'HomePage.Section2.Loyalty / Gift
+                            Card'|_ }}</h4>
+                        <p class="mb-0">{{ 'HomePage.Section2.Loyalty / Gift Card.Description'|_ }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <div class="featured-box featured-box-primary featured-box-effect-4 appear-animation animated fadeIn appear-animation-visible"
+                     data-appear-animation="fadeIn" style="height: 151px; animation-delay: 100ms;">
+                    <div class="box-content px-4">
+                        <i class="icon-featured icon-magnifier icons text-12"></i>
+                        <h4 class="font-weight-bold text-color-dark pb-1 mb-2">{{ 'HomePage.Section2.SEO Optimization'|_
+                            }}</h4>
+                        <p class="mb-0">{{ 'HomePage.Section2.SEO Optimization.Description'|_ }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <div class="featured-box featured-box-primary featured-box-effect-4 appear-animation animated fadeIn appear-animation-visible"
+                     data-appear-animation="fadeIn" style="height: 151px; animation-delay: 100ms;">
+                    <div class="box-content px-4">
+                        <i class="icon-featured icon-screen-desktop icons text-12"></i>
+                        <h4 class="font-weight-bold text-color-dark pb-1 mb-2">{{ 'HomePage.Section2.Website Design'|_
+                            }}</h4>
+                        <p class="mb-0">{{ 'HomePage.Section2.Website Design.Description'|_ }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section bg-color-grey section-height-3 border-0 mt-5 mb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
+                        <div class="col-md-4 px-5 px-md-3">
+                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4"
+                                 src="{{ 'assets/images/point_of_sell.jpg' | theme }}"
+                                 alt="layout styles"/>
+                        </div>
+                        <div class="col-md-8 pl-md-5">
+                            <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">
+                                {{ 'HomePage.Section3.Know your customers'|_ }}</strong></h2>
+                            <p class="text-4">{{ 'HomePage.Section3.Know your customers.Description'|_ }}</p>
+                        </div>
+                    </div>
+
+                    <hr class="solid my-5">
+
+                    <div class="row align-items-center pt-5 pb-3 appear-animation"
+                         data-appear-animation="fadeInRightShorter">
+                        <div class="col-md-8 pr-md-5 mb-5 mb-md-0">
+                            <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">{{
+                                'HomePage.Section3.Do
+                                more with your stock'|_ }}</strong></h2>
+                            <p class="text-4">{{ 'HomePage.Section3.Do more with your stock.Description'|_ }}</p>
+                        </div>
+                        <div class="col-md-4 px-5 px-md-3">
+                            <img class="img-fluid scale-2 my-4"
+                                 src="{{ 'assets/images/know_your_stock.jpg' | theme }}"
+                                 alt="style switcher"/>
+                        </div>
+                    </div>
+
+                    <hr class="solid my-5">
+
+                    <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
+                        <div class="col-md-4 px-5 px-md-3">
+                            <img class="img-fluid scale-2 my-4"
+                                 src="{{ 'assets/images/offer_payment.jpg' | theme }}"
+                                 alt="layout styles"/>
+                        </div>
+                        <div class="col-md-8 pl-md-5">
+                            <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">{{
+                                'HomePage.Section3.Offer
+                                payment flexibility'|_ }}</strong></h2>
+                            <p class="text-4">{{ 'HomePage.Section3.Offer payment flexibility.Description'|_ }}</p>
+                        </div>
+                    </div>
+
+                    <hr class="solid my-5">
+
+                    <div class="row align-items-center pt-5 pb-3 appear-animation"
+                         data-appear-animation="fadeInRightShorter">
+                        <div class="col-md-8 pr-md-5 mb-5 mb-md-0">
+                            <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">{{
+                                'HomePage.Section3.Grow your business'|_ }}</strong></h2>
+                            <p class="text-4">{{ 'HomePage.Section3.Grow your business.Description'|_ }}</p>
+                        </div>
+                        <div class="col-md-4 px-5 px-md-3">
+                            <img class="img-fluid scale-2 my-4"
+                                 src="{{ 'assets/images/grow_your_business_s.jpg' | theme }}"
+                                 alt="style switcher"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-height-3 bg-color-grey-scale-1 m-0 border-0">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 pb-sm-4 pb-lg-0 pr-lg-5 mb-sm-5 mb-lg-0">
+                    {% if activeLocale == 'zh' %}
+                    <h2 class="text-color-dark font-weight-normal text-6 mb-2">我们 <strong
+                            class="font-weight-extra-bold">是谁</strong></h2>
+                    {% else %}
+                    <h2 class="text-color-dark font-weight-normal text-6 mb-2">Who <strong
+                            class="font-weight-extra-bold">We Are</strong></h2>
+                    {% endif %}
+                    <p class="lead">{{ 'HomePage.Section4.Title'|_ }}</p>
+                    <p class="pr-5 mr-5">{{ 'HomePage.Section4.Description'|_ }}</p>
+                    <a href="{{ 'about-us'|page }}" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">{{
+                        'System.LEARN MORE'|_ }}</a>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-4 offset-sm-4 offset-md-4 offset-lg-2 mt-sm-5"
+                     style="top: 1.7rem;">
+                    <img src="{{'assets/images/ezupos1.jpg' | theme}}"
+                         class="img-fluid position-absolute d-none d-sm-block appear-animation animated expandIn appear-animation-visible"
+                         data-appear-animation="expandIn" data-appear-animation-delay="300"
+                         style="top: 10%; left: -50%; animation-delay: 300ms;" alt="">
+                    <img src="{{'assets/images/ezupos2.jpg' | theme}}"
+                         class="img-fluid position-absolute d-none d-sm-block appear-animation animated expandIn appear-animation-visible"
+                         data-appear-animation="expandIn" style="top: -33%; left: -29%; animation-delay: 100ms;" alt="">
+                    <img src="{{'assets/images/ezupos3.jpg' | theme}}"
+                         class="img-fluid position-relative appear-animation mb-2 animated expandIn appear-animation-visible"
+                         data-appear-animation="expandIn" data-appear-animation-delay="600" alt=""
+                         style="animation-delay: 600ms;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="call-to-action call-to-action-primary m-0">
+        <div class="container">
+            <div class="row py-3 py-lg-5">
+                <div class="col-sm-12 col-lg-9 justify-content-center justify-content-lg-start mb-md-4">
+                    <div class="call-to-action-content">
+                        <h3 class="alternative-font-2 text-8 line-height-1">{{ 'HomePage.Section5.Title'|_ }}</h3>
+                        <p class="mb-0 opacity-7">{{ 'HomePage.Section5.SubTitle'|_ }}</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 justify-content-center justify-content-lg-end">
+                    <div class="call-to-action-btn">
+                        <a href="{{ 'contact-us'|page }}" target="_blank"
+                           class="btn btn-outline btn-rounded btn-light-2 px-5 btn-py-2 font-weight-bold text-uppercase text-1 mb-2">{{
+                            'System.CONTACT US'|_ }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% partial 'common/brand-slider' %}
+</div>

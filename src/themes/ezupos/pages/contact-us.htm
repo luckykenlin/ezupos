@@ -1,0 +1,97 @@
+title = "Ezupos | contact us"
+url = "/contactus"
+layout = "default"
+meta_title = "Ezupos | contact us"
+is_hidden = 0
+
+[contactform]
+
+[viewBag]
+activeMenu = "contact-us"
+==
+<div role="main" class="main">
+    <div class="container">
+
+        <div class="row py-4">
+            <div class="col-lg-8">
+
+                <div class="overflow-hidden mb-1">
+                    {% if activeLocale == 'zh' %}
+                    <h2 class="font-weight-normal text-7 mt-2 mb-0 appear-animation" data-appear-animation="maskUp"
+                        data-appear-animation-delay="200"><strong class="font-weight-extra-bold">联系</strong> 我们
+                    </h2>
+                    {% else %}
+                    <h2 class="font-weight-normal text-7 mt-2 mb-0 appear-animation" data-appear-animation="maskUp"
+                        data-appear-animation-delay="200"><strong class="font-weight-extra-bold">Contact</strong> Us
+                    </h2>
+                    {% endif %}
+                </div>
+                <div class="overflow-hidden mb-4 pb-3">
+                    <p class="mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="400">
+                        {{ 'ContactPage.Title'|_ }}
+                    </p>
+                </div>
+
+                {% component 'contactform' %}
+            </div>
+            <div class="col-lg-4">
+                <div class="text-dark font-weight-bold my-2 text-4">
+                    TeamViewer: <a href="https://go3solutions-cms.s3.amazonaws.com/ezupos/uploads/TV.zip"
+                                   target="_blank">Click me to download</a>
+                </div>
+                <img src="{{ 'assets/images/map.jpeg' | theme }}" class="img-fluid" alt="google map">
+
+                <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="400">
+                    {% if activeLocale == 'zh' %}
+                    <h4 class="mt-2 mb-1">我们的 <strong>办公室</strong></h4>
+                    {% else %}
+                    <h4 class="mt-2 mb-1">Our <strong>Office</strong></h4>
+                    {% endif %}
+                    <ul class="list list-icons list-icons-style-2 mt-2">
+                        <li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">{{ 'System.Address'|_
+                            }}:</strong>
+                            <span class="text-primary">{{this.theme.config.address}}</span>
+                        </li>
+                        <li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">{{ 'System.Address'|_
+                            }}:</strong>
+                            <span class="text-primary">45 Division Street 2FL New York NY, 10002</span>
+                        </li>
+                        <li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">{{ 'System.Address'|_
+                            }}:</strong>
+                            <span class="text-primary">50 Broad Street 1701, New York NY, 10004</span>
+                        </li>
+                        <li><i class="fas fa-phone top-6"></i> <strong class="text-dark">{{ 'System.Phone'|_
+                            }}:</strong><a
+                                href="tel:8883771838">{{this.theme.config.phone}}</a>
+                        </li>
+                        <li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">{{ 'System.Email'|_
+                            }}:</strong> <a
+                                href="mailto:ezupos@hotmail.com">{{this.theme.config.email}}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="call-to-action call-to-action-default with-button-arrow content-align-center call-to-action-in-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-lg-9">
+                <div class="call-to-action-content">
+                    <h2 class="font-weight-normal text-6 mb-0">{{ 'ContactPage.Bottom.Title'|_ }}</h2>
+                    <p class="mb-0">{{ 'ContactPage.Bottom.Description'|_ }}</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3">
+                <div class="call-to-action-btn">
+                    <a href="{{ 'about-us'|page }}" target="_blank"
+                       class="btn btn-dark btn-lg text-3 font-weight-semibold px-4 py-3">{{ 'ContactPage.Get Started
+                        Now'|_ }}</a><span
+                        class="arrow hlb d-none d-md-block" data-appear-animation="rotateInUpLeft"
+                        style="top: -40px; left: 70%;"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

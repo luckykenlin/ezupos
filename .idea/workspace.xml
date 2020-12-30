@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f02499dc-639d-4bff-8d65-56cec8974554" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/default.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,18 +144,40 @@
       <workItem from="1609267065795" duration="5014000" />
       <workItem from="1609272680388" duration="2998000" />
       <workItem from="1609279978442" duration="5516000" />
-      <workItem from="1609296225915" duration="3119000" />
+      <workItem from="1609296225915" duration="3357000" />
     </task>
+    <task id="LOCAL-00001" summary="fix https bug">
+      <created>1609300269783</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609300269783</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="fix https bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix https bug" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="426" y="119" key="CommitChangelistDialog2" timestamp="1609300269547">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="426" y="119" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1609300269547" />
     <state x="667" y="234" key="RollbackChangesDialog" timestamp="1609297533685">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="667" y="234" key="RollbackChangesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1609297533685" />
+    <state x="440" y="252" key="Vcs.Push.Dialog.v2" timestamp="1609300270771">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="252" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1609300270771" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1609275516225">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

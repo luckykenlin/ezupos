@@ -5,12 +5,13 @@ services:
     build:
       context: .
       dockerfile: nginx.dockerfile
-    environment:
-      - VIRTUAL_HOST=www.ezupos.com,ezupos.com
+    container_name: ezu_site
     ports:
       - "3000:80"
     volumes:
       - ./src:/var/www/html
+    environment:
+      - VIRTUAL_HOST=www.ezupos.com,ezupos.com
     depends_on:
       - php
     networks:
@@ -20,6 +21,7 @@ services:
     build:
       context: .
       dockerfile: php.dockerfile
+    container_name: ezu_php
     volumes:
       - ./src:/var/www/html
     ports:
